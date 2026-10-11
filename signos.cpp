@@ -1,7 +1,13 @@
-#include <iostream>
-#include <string>
+#include <iostream> 
+#include <string> 
+double fahrenheitACelsius(double f) { 
+return (f - 32) * 5.0 / 9.0; } 
+int main() { 
+    std::cout << "Modulo de signos vitales" << std::endl; 
 
-int main() {
-    std::cout << "Modulo de signos vitales" << std::endl;
+    double fahrenheit;
+    std::cout << "Temperatura en Fahrenheit: ";
+    std::cin >> fahrenheit;
+    std::cout << "Temperatura en Celsius: " << fahrenheitACelsius(fahrenheit) << std::endl;
     return 0;
 }
